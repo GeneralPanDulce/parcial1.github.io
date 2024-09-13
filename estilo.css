@@ -157,7 +157,7 @@ footer{
 @media screen and (max-width: 832px){
     #fondo{
         width: 100%;
-        background-image: url(Img/descarga.jpeg);
+        background-image: url(imgs/wall.webp);
         margin-left: 10%;
     }
     main{
@@ -165,7 +165,7 @@ footer{
         height: 1400px;
         margin: 0 auto;
     }
-    .personaje{
+    .item{
         width: 100%;
         height: auto;
         margin-top: 0 auto;
