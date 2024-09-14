@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "MyCustomFont";
+    font-optical-sizing: auto;
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url(font/upheavtt.ttf) format('woff2'),
+}
+#fondo{
+    width: 100%;
+    height: auto;
+    background-image: url(imgs/wall.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(222, 222, 222, 0.603);
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #45ccf56c;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+}
+nav a{
+    width: 10px;
+    height: auto;
+    color: black;
+    text-align: center;
+    padding: 2px 5px;
+    text-decoration: none;
+    line-height: 35px;
+    padding: 10px 15px;
+    margin: 0 auto;
+}
+.topnav {
+    overflow: hidden;
+  }
+.topnav a{
+    transition: 0.9s;
+}
+  
+.topnav a:hover {
+    background-color: #25c8fa;
+    color: rgb(255, 255, 255);
+}
+  
+.topnav .icon {
+    display: none;
+}
+main{
+    width: 80%;
+    height: 1400px;
+    margin: 0 auto;
+}
+.item{
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    float: left;
+    margin-left: 33px;
+}
+.foto{
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-left: 33px;
+    text-align: center;
+}
+.foto img{
+height: 200px;
+background-color: #e5e6e6ab;
+}
+.texto{
+    width: 60%;
+    height: auto;
+    float: left;
+    margin-left: 33px;
+    padding: 20px;
+    background-color: #e5e6e6ab;
+    
+}
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #2e74896c;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    display: flex;
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1080px){
+    nav{
+        width: 100%;
+    }
+    nav a{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 970px){
+    main{
+        width: 90%;
+        height: 1400px;
+        margin: 0 auto;
+    }
+    .item{
+        width: 90%;
+    }
+    nav a{
+        font-size: 20px;
+        padding: 0px;
+    }  
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      margin-left: 15px;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: relative;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+@media screen and (max-width: 832px){
+    #fondo{
+        width: 100%;
+        background-image: url(imgs/wall.webp);
+    }
+    main{
+        width: 100%;
+        height: 1400px;
+        margin: 0 auto;
+    }
+    .item{
+        width: 100%;
+        height: auto;
+        margin-top: 0 auto;
+        float: left;
+        margin-left: 0 auto;
+    }
+    .texto{
+        width: 90%;
+        margin-left: 0px;
+        padding: 10px;
+    }
+    .foto{
+        width: 90%;
+        height: auto;
+        float: left;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+}
